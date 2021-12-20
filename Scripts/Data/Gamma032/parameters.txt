@@ -1,0 +1,35 @@
+Parameter file for SI.c
+
+MODEL PARAMETERS
+
+reprS 0.032
+reprI 0.0
+dS 0.05
+dI 0.2
+h_inf 20.0
+
+mut 0.005
+mut_step 0.5
+
+diff 0.05
+
+init_inf 5.0
+
+SIMULATION SETTING PARAMETERS
+
+init 1
+movie 0
+results 1
+display 0
+
+startmovietime 200000
+endmovietime 205000
+movietime 5
+resulttime 100000
+startseltime 200000
+endseltime 210000
+
+MaxTime 250000
+nrow 1024
+ncol 1024
+ulseedG 39

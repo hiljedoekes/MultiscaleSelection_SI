@@ -1,0 +1,51 @@
+This is the README of cash2-s.
+
+***********
+* Credits *
+***********
+
+CASH, Cash2 and all its extensions were developed by members of the Theoretical Biology and Bioinformatics group at Utrecht University (https://tbb.bio.uu.nl): 
+
+CASH was developed by Rob de Boer and Alex Starisky (v. 2003)
+Cash2 and Cash2-s were developed by Nobuto Takeuchi (v. 2007)
+Additions and improvements were subsequently made by various TBB members, including Thomas Cuypers, Bram Van Dijk, and Hilje Doekes.
+
+******************
+* How to install *
+******************
+
+*** The easiest way ***
+
+Within your Cash folder, type the following:
+
+make
+make install
+
+NOTE: Whenever you make changes to the Cash functions (files cash2.c/h and cash2-s.c/h) or the TYPE2 struct (file cash2.h), Cash has to be recompiled.
+Code that depends on the specifics of the TYPE2 struct is labeled //StructChange
+
+
+To compile a model that uses Cash, change to folder where model code is stored and type the following:
+
+make <model-name>
+
+The Model folder should be a subdirectory of the Cash folder that you use, and should contain its own makefile.
+
+
+*** A non-easiest way ***
+
+Modify the makefile in the cash2-s directory appropriately, such that models and cash2 code are all recompiled in one go.
+
+
+********************
+* How to uninstall *
+********************
+In cash2-s directory:
+
+make uninstall
+
+
+**************
+* How to use *
+**************
+See manual_cash(_s).pdf.

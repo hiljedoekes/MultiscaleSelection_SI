@@ -1,0 +1,4 @@
+INSTALL_DIRECTORY = /home/hilje/local
+
+.c:
+	gcc -O3 -Wall -o $@ $< -L$(INSTALL_DIRECTORY)/lib -I$(INSTALL_DIRECTORY)/include -lm -lcash2-s -lc -lpng -lz -lX11 -lgrace_np -lfftw3 -lm
