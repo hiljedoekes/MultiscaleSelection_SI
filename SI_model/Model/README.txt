@@ -89,37 +89,37 @@ Next to the four main functions described above, SI.c contains several auxiliary
 
 MODEL PARAMETERS
 
-reprS 			Reproduction rate of susceptibles (per empty neighbour site per time step)
-reprI 0.0		Reproduction rate of infected individuals (per empty neighbour site per time step)
-dS 0.05			Death rate of susceptibles (per time step)
-dI 0.2			Death rate of infected individuals (per time step)
-h_inf 20.0		Scaling factor of infection probability (if the sum of infectivities of the eight neighbours is equal to h_inf, the probability of infection is 0.5)
+reprS 		Reproduction rate of susceptibles (per empty neighbour site per time step)
+reprI 		Reproduction rate of infected individuals (per empty neighbour site per time step)
+dS 		Death rate of susceptibles (per time step)
+dI 		Death rate of infected individuals (per time step)
+h_inf 		Scaling factor of infection probability (if the sum of infectivities of the eight neighbours is equal to h_inf, the probability of infection is 0.5)
 
-mut 0.005		Mutation rate (per time step)
-mut_step 0.5		Maximal mutation step size (mutation step size is chosen from uniform distribution on [-mut_step; mut_step]. If new value < 0, it is set to 0.
+mut 		Mutation rate (per time step)
+mut_step	Maximal mutation step size (mutation step size is chosen from uniform distribution on [-mut_step; mut_step]. If new value < 0, it is set to 0.
 
-diff 0.05		"Diffusion rate": probability with which a square is swapped with a random neighbour
+diff		"Diffusion rate": probability with which a square is swapped with a random neighbour
 
-init_inf 5.0		Initial value of infectivity
+init_inf	Initial value of infectivity
 
 SIMULATION SETTING PARAMETERS
 
-init 1			0: Data is read from previous file stored in saveplane.txt; 1: random initialisation, all infected individuals get infectivity = init_inf
-movie 0			0: No movie is recorded; 1: PNGs are saved to construct movie.
-results 1		0: No regular data-dumps; 1: regular data-dumps are made.
-display 0		0: No display (for remote simulation); 2: real-time display of simulation plane.
+init		0: Data is read from previous file stored in saveplane.txt; 1: random initialisation, all infected individuals get infectivity = init_inf
+movie		0: No movie is recorded; 1: PNGs are saved to construct movie.
+results		0: No regular data-dumps; 1: regular data-dumps are made.
+display		0: No display (for remote simulation); 2: real-time display of simulation plane.
 
-startmovietime 200000	Time point from which PNGs for movie are saved.
-endmovietime 205000	Time point after which no more PNGs are saved.
-movietime 5		Interval at which PNGs are saved.
-resulttime 100000	Interval at which data-dumps are made (stored in saveplaneTIME.txt)
-startseltime 200000	Time point from which selection decomposition is calculated and outputted in selection.txt (every time step)
-endseltime 210000	Time point after which selection decomposition is no longer calculated
+startmovietime 	Time point from which PNGs for movie are saved.
+endmovietime 	Time point after which no more PNGs are saved.
+movietime 	Interval at which PNGs are saved.
+resulttime 	Interval at which data-dumps are made (stored in saveplaneTIME.txt)
+startseltime 	Time point from which selection decomposition is calculated and outputted in selection.txt (every time step)
+endseltime 	Time point after which selection decomposition is no longer calculated
 
-MaxTime 250000		Maximum number of time steps in simulation
-nrow 1024		Number of rows of simulation planes
-ncol 1024		Number of columns of simulation planes
-ulseedG 39		Random seed
+MaxTime 	Maximum number of time steps in simulation
+nrow 		Number of rows of simulation planes
+ncol 		Number of columns of simulation planes
+ulseedG 	Random seed
 
 
 
